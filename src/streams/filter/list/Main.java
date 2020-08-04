@@ -1,15 +1,11 @@
-package streams;
-
-import entity.Person;
-
-import java.util.List;
+package streams.filter.list;
 
 public class Main {
 
-    public Filter filter;
+    public FilterList filter;
 
     public Main() {
-        filter = new Filter();
+        filter = new FilterList();
     }
 
     public void streamFilter(){

@@ -1,11 +1,16 @@
-package streams;
+package streams.filter.list;
 
 import entity.Gender;
 import entity.Person;
+
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-public class Filter{
+public class FilterList {
+
+
 
     private boolean filterByGender(Person person, Gender gender){
         if(person.getGender().equals(gender)){

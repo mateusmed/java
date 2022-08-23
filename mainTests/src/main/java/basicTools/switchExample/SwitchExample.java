@@ -1,8 +1,8 @@
-package basicTools.switchTools;
+package basicTools.switchExample;
 
 import java.time.DayOfWeek;
 
-public class SwitchTools {
+public class SwitchExample {
 
     private String switchVersion14(DayOfWeek dayOfWeek){
 

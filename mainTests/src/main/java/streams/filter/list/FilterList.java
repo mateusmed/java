@@ -1,12 +1,10 @@
 package streams.filter.list;
 
-import entity.Gender;
-import entity.Person;
+import streams.entity.Gender;
+import streams.entity.Person;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class FilterList {
 

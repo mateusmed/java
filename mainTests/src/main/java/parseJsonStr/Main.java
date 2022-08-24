@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ParseJsonStr parseJsonStr = new ParseJsonStr();
+        ParseJsonErrorQuote parseJsonStr = new ParseJsonErrorQuote();
         parseJsonStr.test();
 
     }

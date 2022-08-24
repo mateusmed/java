@@ -26,6 +26,11 @@
             <artifactId>htrace-core</artifactId>
             <version>3.1.0-incubating</version>
         </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20220320</version>
+        </dependency>
     </dependencies>
 
 </project>

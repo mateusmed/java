@@ -1,10 +1,17 @@
 package com.mateusmed.architecturestudy.request.v1;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import lombok.Data;
 
-public class CarRequestV1 {
+import java.io.Serializable;
 
-    @NotNull(message = "Name is mandatory")
+
+@Data
+public class CarRequestV1 implements Serializable {
+
+    @NotNull
+    @NotBlank(message = "O nome é required")
     private String name;
 
 }

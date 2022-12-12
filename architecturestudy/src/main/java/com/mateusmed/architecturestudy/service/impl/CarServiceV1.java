@@ -1,8 +1,9 @@
 package com.mateusmed.architecturestudy.service.impl;
 
-import com.mateusmed.architecturestudy.service.clients.*;
 import com.mateusmed.architecturestudy.response.v1.CarResponseV1;
 import com.mateusmed.architecturestudy.service.ICarService;
+import com.mateusmed.architecturestudy.service.clients.CarClientFeign;
+import com.mateusmed.architecturestudy.service.clients.CarReceivedT;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

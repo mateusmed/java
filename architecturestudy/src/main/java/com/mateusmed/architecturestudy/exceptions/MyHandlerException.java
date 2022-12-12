@@ -53,6 +53,8 @@ public class MyHandlerException{
 
         log.error("logger ==> " + e.getMessage());
 
+        e.printStackTrace();
+
         return ResponseEntity.ok(e.getMessage());
     }
 

@@ -6,12 +6,14 @@ import com.mateusmed.architecturestudy.request.v1.CarRequestV1;
 import com.mateusmed.architecturestudy.response.v1.CarResponseV1;
 import com.mateusmed.architecturestudy.service.impl.CarServiceV1;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotBlank;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 
 
@@ -39,8 +41,7 @@ public class CarControllerV1 {
     @RequestMapping(value = "/car/{id}", method = RequestMethod.GET)
     public ResponseEntity<CarResponseV1> getCarById(@PathVariable String id){
 
-        CarResponseV1 carResponseV1 = carServiceV1.getCarById(id);
-        return ResponseEntity.ok(carResponseV1);
+        return ResponseEntity.ok(null);
     }
 
 

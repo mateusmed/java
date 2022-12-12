@@ -31,11 +31,13 @@ public class CarControllerV1 {
         CarResponseV1 carResponseV1 = new CarResponseV1("f2004", MakerEnum.FERRARI);
         System.out.println(carResponseV1);
 
+        carServiceV1.getAllCars();
+
         return ResponseEntity.ok(carResponseV1);
     }
 
     @RequestMapping(value = "/car/{id}", method = RequestMethod.GET)
-    public ResponseEntity<CarResponseV1> getCarById(@NotBlank @PathVariable String id){
+    public ResponseEntity<CarResponseV1> getCarById(@PathVariable String id){
 
         CarResponseV1 carResponseV1 = carServiceV1.getCarById(id);
         return ResponseEntity.ok(carResponseV1);

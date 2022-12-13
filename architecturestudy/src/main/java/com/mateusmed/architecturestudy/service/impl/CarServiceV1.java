@@ -9,12 +9,14 @@ import com.mateusmed.architecturestudy.service.clients.CarReceivedT;
 import feign.FeignException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Slf4j
 @Service
+@Component("CarServiceV1")
 public class CarServiceV1 implements ICarService {
 
     @Autowired

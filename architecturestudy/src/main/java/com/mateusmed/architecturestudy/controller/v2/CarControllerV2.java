@@ -3,12 +3,13 @@ package com.mateusmed.architecturestudy.controller.v2;
 import com.mateusmed.architecturestudy.enuns.MakerEnum;
 import com.mateusmed.architecturestudy.request.v1.CarRequestV1;
 import com.mateusmed.architecturestudy.response.v2.CarResponseV2;
+import com.mateusmed.architecturestudy.service.ICarService;
+import com.mateusmed.architecturestudy.service.impl.CarServiceV2;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.web.bind.annotation.*;
 
 
 import java.util.List;
@@ -17,6 +18,22 @@ import java.util.List;
 @RestController
 @RequestMapping("/v2")
 public class CarControllerV2 {
+
+
+
+    @Autowired
+    @Qualifier("CarServiceV2")
+    private ICarService carServiceV2;
+    
+
+    @GetMapping("/car")
+    public List<CarResponseV2> getAllCars(){
+
+        carServiceV2.getAllCars();
+
+        List<CarResponseV2> myList =  List.of(new CarResponseV2("name", MakerEnum.MCLAREN));
+        return myList;
+    }
 
     @PostMapping(value = "/car")
     public List<CarResponseV2> postCar(@Valid @RequestBody CarRequestV1 carRequest){

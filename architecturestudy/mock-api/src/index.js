@@ -40,6 +40,21 @@ app.get('/car', (req, res) => {
     res.status(404).send(listResponse);
 });
 
+app.get('/v2/car', (req, res) => {
+
+    let listResponse = [
+        {
+            "xname": "f40"
+        },
+        {
+            "xname": "z4"
+        }
+    ];
+
+    res.status(200).send(listResponse);
+});
+
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 });

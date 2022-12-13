@@ -37,7 +37,7 @@ app.get('/car', (req, res) => {
         }
     ];
 
-    res.status(200).send(listResponse);
+    res.status(404).send(listResponse);
 });
 
 app.listen(port, () => {

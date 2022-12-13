@@ -2,7 +2,7 @@ package com.mateusmed.architecturestudy.enuns;
 
 public enum GenericErrorMessageEnum {
 
-    ERRO_EFETUAR_CHAMADA_HTTP("MS0011", "Erro ao efetuar chamada HTTP:");
+    ERRO_EFETUAR_CHAMADA_HTTP_SERVICO_X("COD_ERROR_SERVICO_X", "Erro ao efetuar chamada HTTP:");
 
     private String code;
     private String description;

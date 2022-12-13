@@ -1,7 +1,7 @@
 
 mock-api/node_modules/*
 
-HELP.md
+README.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/

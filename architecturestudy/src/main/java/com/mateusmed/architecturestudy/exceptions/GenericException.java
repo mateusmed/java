@@ -1,6 +1,6 @@
 package com.mateusmed.architecturestudy.exceptions;
 
-import com.mateusmed.architecturestudy.enuns.GenericErrorMessageEnum;
+import com.mateusmed.architecturestudy.enums.GenericErrorMessageEnum;
 
 public class GenericException extends RuntimeException{
 

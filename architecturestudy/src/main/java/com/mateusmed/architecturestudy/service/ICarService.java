@@ -1,8 +1,6 @@
 package com.mateusmed.architecturestudy.service;
 
-import com.mateusmed.architecturestudy.request.v1.CarRequestV1;
-import com.mateusmed.architecturestudy.response.v1.CarResponseV1;
-import org.springframework.stereotype.Service;
+import com.mateusmed.architecturestudy.v1.response.CarResponseV1;
 
 
 public interface ICarService {
